@@ -1,0 +1,68 @@
+.menu-area li ul,
+.menu-area li ul li ul {
+    background: #55696c;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    z-index: 999;
+    left: 280px;
+    top: 0;
+    list-style: none;
+    position: absolute;
+    height: auto;
+    min-width: 400px;
+    max-width: 500px;
+    padding: 0;
+    margin: 0;
+    }
+
+.menu-area{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: rgba($color: #6b7194, $alpha: .3);
+    width: 250px;
+}
+.menu-area li a strong{
+    display: block;
+    text-transform: uppercase;
+    font-family: url('assets/Raleway-Thin.ttf');
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.menu-area li ul li a{
+    text-transform: uppercase;
+    font-family: url('assets/Raleway-Thin.ttf');
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+.menu-area li:hover > ul,.menu-area li ul li:hover > ul{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    left:250px;
+}
+
+.menu-area li{
+    position:relative;
+}
+
+.menu-area li a{
+  text-align: center;
+  height: 36px;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  display: block;
+  text-decoration: none;
+  padding: 12px 20px;
+  color: #fff;
+}
+
+
+
+.menu-area li:hover > a{
+  color:aqua;
+}
+
+

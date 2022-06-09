@@ -1,0 +1,184 @@
+/*
+Change values here:
+*/
+/*
+The following are calculated automatically:
+*/
+/*
+
+...
+
+*/
+@font-face {
+  font-family: TitleFont;
+  src: url(assets/Raleway-Thin.ttf);
+}
+
+body {
+  background-image: url("assets/rodinny-dum-2/CATA SYCHROV 01.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  -webkit-animation: animate 16s ease-in-out infinite;
+          animation: animate 16s ease-in-out infinite;
+  background-size: cover;
+}
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 50px 0;
+  clear: both;
+}
+
+.menu-area li ul,
+.menu-area li ul li ul {
+  background: #55696c;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  z-index: 999;
+  left: 280px;
+  top: 0;
+  list-style: none;
+  position: absolute;
+  height: auto;
+  min-width: 400px;
+  max-width: 500px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-area {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: rgba(107, 113, 148, 0.3);
+  width: 250px;
+}
+
+.menu-area li a strong {
+  display: block;
+  text-transform: uppercase;
+  font-family: TitleFont;
+  font-size: 27px;
+  letter-spacing: 3px;
+}
+
+.menu-area li ul li a {
+  text-transform: uppercase;
+  font-family: TitleFont;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+.menu-area li:hover > ul, .menu-area li ul li:hover > ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  left: 250px;
+}
+
+.menu-area li {
+  position: relative;
+}
+
+.menu-area li a {
+  text-align: center;
+  height: 36px;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  display: block;
+  text-decoration: none;
+  padding: 12px 20px;
+  color: #fff;
+}
+
+.menu-area li:hover > a {
+  color: aqua;
+}
+
+@-webkit-keyframes animate {
+  0%, 100% {
+    background-image: url("assets/rodinny-dum-2/CATA SYCHROV 01.jpg");
+  }
+  25% {
+    background-image: url("assets/rodinny-dum-2/CATA SYCHROV 02.jpg");
+  }
+  50% {
+    background-image: url("assets/rodinny-dum-2/CATA SYCHROV 03.jpg");
+  }
+  75% {
+    background-image: url("assets/rodinny-dum-2/CATA SYCHROV 04.jpg");
+  }
+}
+
+@keyframes animate {
+  0%, 100% {
+    background-image: url("assets/rodinny-dum-2/CATA SYCHROV 01.jpg");
+  }
+  25% {
+    background-image: url("assets/rodinny-dum-2/CATA SYCHROV 02.jpg");
+  }
+  50% {
+    background-image: url("assets/rodinny-dum-2/CATA SYCHROV 03.jpg");
+  }
+  75% {
+    background-image: url("assets/rodinny-dum-2/CATA SYCHROV 04.jpg");
+  }
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  font-family: TitleFont;
+  color: white;
+}
+
+.header {
+  width: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.inner-header {
+  width: 440px;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template: 1fr / 1fr;
+  place-items: center;
+}
+
+.inner-header > * {
+  -ms-grid-column: 1;
+  grid-column: 1 / 1;
+  -ms-grid-row: 1;
+  grid-row: 1 / 1;
+}
+
+.bg-blur {
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+}
+
+.title {
+  z-index: 2;
+}
+/*# sourceMappingURL=style_rodinny-dum-2.css.map */
